@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_download">
+
+    <fragment
+        android:id="@+id/navigation_download"
+        android:name="com.example.pomp.ui.download.DownloadFragment"
+        android:label="@string/download"
+        tools:layout="@layout/fragment_download" />
+
+    <fragment
+        android:id="@+id/navigation_execute"
+        android:name="com.example.pomp.ui.execution.ExecutionFragment"
+        android:label="@string/execute"
+        tools:layout="@layout/fragment_execute" />
+
+    <fragment
+        android:id="@+id/navigation_output"
+        android:name="com.example.pomp.ui.output.OutputFragment"
+        android:label="@string/output"
+        tools:layout="@layout/fragment_output" />
+</navigation>

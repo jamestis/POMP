@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">POMP</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="download">Download</string>
+    <string name="download_button">Download</string>
+    <string name="execute">Execute</string>
+    <string name="output">Output</string>
+    <string name="download_info_text">Enter a URL and a destination to download a fasta file.</string>
+    <string name="url">URL</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="file_destination">File Destination</string>
+    <string name="enter_file_destination">Enter file destination</string>
+    <string name="enter_parameters_for_phoni_executable">Enter parameters for PHONI executable</string>
+    <string name="enter_path_to_paragraph_fastsa_file">Enter path to paragraph fastsa file</string>
+    <string name="example_fasta">Example.fasta</string>
+    <string name="text_file">Text File</string>
+    <string name="paragraph_fasta">paragraph.fasta</string>
+    <string name="text_fasta">Text.fasta</string>
+    <string name="output_file">Output file</string>
+    <string name="output_location_no_file_ext">Output location(no file ext)</string>
+    <string name="enter_path_to_text_fasta_file">Enter path to text fasta file</string>
+</resources>
