@@ -50,7 +50,7 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
     }
 
 
-    //add error handling: check if url is correct, update progress bar?
+    //error handling for valid URL that is not fasta file.
     @Override
     public void onClick(View v) {
         String URL = URLView.getText().toString().trim();
@@ -61,6 +61,8 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
         }
         else {
             DownloadFile(URL, filePath);
+            Toast toast = Toast.makeText(getContext(), "Check your download manager for file infromation", Toast.LENGTH_LONG);
+            toast.show();
         }
     }
 
@@ -79,8 +81,6 @@ public class DownloadFragment extends Fragment implements View.OnClickListener {
             DownloadManager manager = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
             System.out.println("Finished queing download");
             manager.enqueue(req);
-            Toast toast = Toast.makeText(getContext(), "Check your download manager for file infromation", Toast.LENGTH_LONG);
-            toast.show();
         }
         catch(IllegalArgumentException arg){
             Toast toast = Toast.makeText(getContext(), "Invalid URL!", Toast.LENGTH_LONG);
